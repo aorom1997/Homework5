@@ -13,4 +13,4 @@ All links:
 
 https://aorom1997.github.io/Homework5/
 
-https://github.com/aorom1997/GUIProgramming
+https://github.com/aorom1997/Homework5
