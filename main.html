@@ -1,0 +1,67 @@
+<!--
+Name: Anthony Rom
+Email: anthony_rom@student.uml.edu
+Affiliation: UMass Lowell Senior; Computer Science Major, UTeach Minor
+Date: October 29, 2020
+Description: This is HTML file is for HW5 to set the content of the page.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Multiplication table</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+    <body>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron text-center">
+        <div class="container">
+          <h1>Multiplication Table</h1>
+        </div>
+      </div>
+
+      <!-- Forms -->
+      <div class="container">
+         <form>
+            <div class="form-group">
+               <label for="minColumnValue">Min Column Value</label>
+               <input type="number" class="form-control" id="minColumnValue" placeholder="Enter a value between -50 and 50.">
+               <p id="err1"></p>
+               <p id="err1_2"></p>
+            </div>
+           <div class="form-group">
+              <label for="maxColumnValue">Max Column Value</label>
+              <input type="number" class="form-control" id="maxColumnValue" placeholder="Enter a value between -50 and 50.">
+              <p id="err2"></p>
+            </div>
+           <div class="form-group">
+              <label for="minRowValue">Min Row Value</label>
+              <input type="number" class="form-control" id="minRowValue" placeholder="Enter a value between -50 and 50.">
+              <p id="err3"></p>
+              <p id="err3_2"></p>
+           </div>
+          <div class="form-group">
+              <label for="maxRowValue">Max Row Value</label>
+              <input type="number" class="form-control" id="maxRowValue" placeholder="Enter a value between -50 and 50.">
+              <p id="err4"></p>
+          </div>
+
+           <button type="button" class="btn btn-info" onclick="getData()">Generate a table</button>
+        </form>
+        <hr>
+     </div>
+
+     <div class="container">
+           <table class="table table-bordered text-center" id="Table">
+           </table>
+     </div>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+      <script src="js/main.js"></script>
+  </body>
+</html>
